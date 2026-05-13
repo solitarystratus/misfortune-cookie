@@ -1,0 +1,19 @@
+/*
+ * app/globals.css
+ * Tailwind base/components/utilities directives.
+ * The heavy lifting (keyframes, custom vars, fonts) is done inline in
+ * page.tsx via a <style> tag so the component stays self-contained.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent body background flash before React hydrates */
+:root {
+  --bg: #0A0F1C;
+  --green: #00FF41;
+}
+
+html, body {
+  background-color: var(--bg);
+}
